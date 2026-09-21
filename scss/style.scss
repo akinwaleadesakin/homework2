@@ -1,0 +1,94 @@
+$background: #f4f4f4;
+$dark: #222;
+$white: #ffffff;
+$text: #333;
+$hover: #dddddd;
+$accent: #4a6fa5;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background;
+    color: $text;
+}
+
+header {
+    background-color: $dark;
+    color: $white;
+    text-align: center;
+    padding: 30px;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    button {
+        background-color: $white;
+        color: $dark;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hover;
+        }
+    }
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#app {
+    background-color: $white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        font-size: 32px;
+        color: $accent;
+        margin-bottom: 25px;
+    }
+
+    p {
+        max-width: 750px;
+        margin: 20px auto;
+        line-height: 1.7;
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 700px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+footer {
+    background-color: $dark;
+    color: $white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}

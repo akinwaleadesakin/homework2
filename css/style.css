@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+header h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+nav button {
+  background-color: #ffffff;
+  color: #222;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav button:hover {
+  background-color: #dddddd;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#app {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#app h2 {
+  font-size: 32px;
+  color: #4a6fa5;
+  margin-bottom: 25px;
+}
+#app p {
+  max-width: 750px;
+  margin: 20px auto;
+  line-height: 1.7;
+  font-size: 18px;
+}
+#app img {
+  width: 100%;
+  max-width: 700px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #222;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+# My Travel Guide
+
+My Travel Guide is a small single-page website created for Homework 2. It uses a simple MVC structure to display information about travel destinations, food, and travel experiences without reloading the page.
+
+## Features
+
+- Home, Destinations, Food, and About views
+- Button-based navigation between views
+- Travel images and responsive page layout
+- Styling written in Sass and compiled to CSS
+
+## Project Structure
+
+```text
+index.html       Main HTML page
+app/             Application entry point and controller
+model/           Page content and view-changing logic
+scss/            Sass source styles
+css/             Compiled CSS
+images/          Images used by the pages
+```
+
+## Getting Started
+
+Install the development dependencies:
+
+```bash
+npm install
+```
+
+Start the local development server:
+
+```bash
+npm run serve
+```
+
+Open the local URL provided by `live-server` in a browser.
+
+To compile the Sass stylesheet manually, run:
+
+```bash
+npx sass scss/style.scss css/style.css --no-source-map
+```
+
+## How It Works
+
+The application starts in `app/app.js`, which loads the controller. The controller listens for clicks on the navigation buttons and requests the matching page from the model. The model then updates the `#app` element with the selected view.
